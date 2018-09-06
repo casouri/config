@@ -6,6 +6,11 @@
 - gnupg
 - make
 - cheat
+- rg
+- python3
+- python-language-server
+- terminal-notifier
+- compface
 
 - [[https://github.com/d12frosted/homebrew-emacs-plus][emacs-plus]]
 
