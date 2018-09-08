@@ -1,0 +1,48 @@
+#+TITLE: Setup procedure
+
+* Packages
+
+** Managed by Homebrew
+
+*** Commandline
+
+- tree :: print directory tree
+- gnupg :: manage keys
+- make :: macOS's default make is too old
+- cheat :: cheatsheet for commandline
+- rg :: ripgrep
+- python3 :: obvious
+- python-language-server :: lsp python server
+- terminal-notifier :: as the name suggest
+- compface :: for x-face
+- git :: version control
+
+- [[https://github.com/d12frosted/homebrew-emacs-plus][emacs-plus]] :: Best editor (oops!)
+
+#+BEGIN_SRC shell
+brew tap d12frosted/emacs-plus
+brew install emacs-plus --without-spacemacs-icon
+#+END_SRC
+
+
+*** Cask
+
+- Kap :: screen recording
+- Thunderbird :: mail and irc client
+- 
+
+* Prefrences
+
+** Increase key repeat rate
+
+** xcode and commandline tools
+
+#+BEGIN_SRC shell
+xcode-select --install
+#+END_SRC
+
+** Map Caps to Esc
+
+* Other
+
+** SF Test/Pro/Mono font 
