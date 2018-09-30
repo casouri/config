@@ -4,225 +4,69 @@
 <array>
 	<dict>
 		<key>phrase</key>
-		<string>YaST</string>
+		<string>⌘</string>
 		<key>shortcut</key>
-		<string>yast</string>
-	</dict>
-	<dict>
-		<key>phrase</key>
-		<string>(〃▽〃)</string>
-		<key>shortcut</key>
-		<string>xiu</string>
-	</dict>
-	<dict>
-		<key>phrase</key>
-		<string>(#｀Д´)ﾉﾉ┻┻;:'､･ﾞ</string>
-		<key>shortcut</key>
-		<string>xianzhuo</string>
-	</dict>
-	<dict>
-		<key>phrase</key>
-		<string>x86_64</string>
-		<key>shortcut</key>
-		<string>x64__</string>
-	</dict>
-	<dict>
-		<key>phrase</key>
-		<string>x86</string>
-		<key>shortcut</key>
-		<string>x32__</string>
-	</dict>
-	<dict>
-		<key>phrase</key>
-		<string>VMware</string>
-		<key>shortcut</key>
-		<string>vmware</string>
-	</dict>
-	<dict>
-		<key>phrase</key>
-		<string>Virtualbox</string>
-		<key>shortcut</key>
-		<string>virtualbox</string>
-	</dict>
-	<dict>
-		<key>phrase</key>
-		<string>↑</string>
-		<key>shortcut</key>
-		<string>up__</string>
-	</dict>
-	<dict>
-		<key>phrase</key>
-		<string>⇧</string>
-		<key>shortcut</key>
-		<string>shift__</string>
-	</dict>
-	<dict>
-		<key>phrase</key>
-		<string>→</string>
-		<key>shortcut</key>
-		<string>right__</string>
-	</dict>
-	<dict>
-		<key>phrase</key>
-		<string>Qt 4</string>
-		<key>shortcut</key>
-		<string>qt4</string>
-	</dict>
-	<dict>
-		<key>phrase</key>
-		<string>openSUSE</string>
-		<key>shortcut</key>
-		<string>opensuse</string>
-	</dict>
-	<dict>
-		<key>phrase</key>
-		<string>,,Ծ‸Ծ,,</string>
-		<key>shortcut</key>
-		<string>ningshi</string>
-	</dict>
-	<dict>
-		<key>phrase</key>
-		<string>———————————————————————————————————————————</string>
-		<key>shortcut</key>
-		<string>linebreak__</string>
-	</dict>
-	<dict>
-		<key>phrase</key>
-		<string>←</string>
-		<key>shortcut</key>
-		<string>left__</string>
-	</dict>
-	<dict>
-		<key>phrase</key>
-		<string>(⌐■_■)</string>
-		<key>shortcut</key>
-		<string>ku</string>
-	</dict>
-	<dict>
-		<key>phrase</key>
-		<string>(*´ ˘ `*)</string>
-		<key>shortcut</key>
-		<string>keai</string>
-	</dict>
-	<dict>
-		<key>phrase</key>
-		<string>KDE</string>
-		<key>shortcut</key>
-		<string>kde</string>
-	</dict>
-	<dict>
-		<key>phrase</key>
-		<string>(￣Д￣;)</string>
-		<key>shortcut</key>
-		<string>jiong</string>
-	</dict>
-	<dict>
-		<key>phrase</key>
-		<string>GTK</string>
-		<key>shortcut</key>
-		<string>gtk</string>
-	</dict>
-	<dict>
-		<key>phrase</key>
-		<string>GNOME</string>
-		<key>shortcut</key>
-		<string>gnome</string>
-	</dict>
-	<dict>
-		<key>phrase</key>
-		<string>Γ</string>
-		<key>shortcut</key>
-		<string>gamma</string>
-	</dict>
-	<dict>
-		<key>phrase</key>
-		<string>γ</string>
-		<key>shortcut</key>
-		<string>gamma</string>
-	</dict>
-	<dict>
-		<key>phrase</key>
-		<string>付禹安</string>
-		<key>shortcut</key>
-		<string>fuyuan</string>
-	</dict>
-	<dict>
-		<key>phrase</key>
-		<string>Firefox</string>
-		<key>shortcut</key>
-		<string>firefox</string>
-	</dict>
-	<dict>
-		<key>phrase</key>
-		<string>↓</string>
-		<key>shortcut</key>
-		<string>down__</string>
-	</dict>
-	<dict>
-		<key>phrase</key>
-		<string>°</string>
-		<key>shortcut</key>
-		<string>dg</string>
-	</dict>
-	<dict>
-		<key>phrase</key>
-		<string>℉</string>
-		<key>shortcut</key>
-		<string>degreef</string>
-	</dict>
-	<dict>
-		<key>phrase</key>
-		<string>℃</string>
-		<key>shortcut</key>
-		<string>degreec</string>
+		<string>:command:</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
 		<string>⌃</string>
 		<key>shortcut</key>
-		<string>control__</string>
+		<string>:ctrl:</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
-		<string>⌘</string>
+		<string>°</string>
 		<key>shortcut</key>
-		<string>command__</string>
+		<string>:degree:</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
-		<string>Chromium</string>
+		<string>℃</string>
 		<key>shortcut</key>
-		<string>chromium</string>
+		<string>:degreec:</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
-		<string>(￣^￣)ゝ</string>
+		<string>℉</string>
 		<key>shortcut</key>
-		<string>bushuang</string>
+		<string>:degreef:</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
-		<string>,,Ծ‸Ծ,,</string>
+		<string>↓</string>
 		<key>shortcut</key>
-		<string>bushuang</string>
+		<string>:down:</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
-		<string>Β</string>
+		<string>←</string>
 		<key>shortcut</key>
-		<string>beta</string>
+		<string>:left:</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
-		<string>β</string>
+		<string>Я</string>
 		<key>shortcut</key>
-		<string>beta</string>
+		<string>:r:</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
-		<string>α</string>
+		<string>→</string>
 		<key>shortcut</key>
-		<string>alpha</string>
+		<string>:right:</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>⇧</string>
+		<key>shortcut</key>
+		<string>:shift:</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>↑</string>
+		<key>shortcut</key>
+		<string>:up:</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
@@ -232,28 +76,285 @@
 	</dict>
 	<dict>
 		<key>phrase</key>
-		<string>」</string>
+		<string>α</string>
 		<key>shortcut</key>
-		<string>]]]]</string>
+		<string>alpha</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
-		<string>』</string>
+		<string>β</string>
 		<key>shortcut</key>
-		<string>]]]</string>
+		<string>beta</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
-		<string>「</string>
+		<string>Β</string>
 		<key>shortcut</key>
-		<string>[[[[</string>
+		<string>beta</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
-		<string>『</string>
+		<string>χ</string>
 		<key>shortcut</key>
-		<string>[[[</string>
+		<string>chi</string>
 	</dict>
-	<dict/>
+	<dict>
+		<key>phrase</key>
+		<string>Χ</string>
+		<key>shortcut</key>
+		<string>chi</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>δ</string>
+		<key>shortcut</key>
+		<string>delta</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>Δ</string>
+		<key>shortcut</key>
+		<string>delta</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>ε</string>
+		<key>shortcut</key>
+		<string>epsilon</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>Ε</string>
+		<key>shortcut</key>
+		<string>epsilon</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>η</string>
+		<key>shortcut</key>
+		<string>eta</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>Η</string>
+		<key>shortcut</key>
+		<string>eta</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>γ</string>
+		<key>shortcut</key>
+		<string>gamma</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>Γ</string>
+		<key>shortcut</key>
+		<string>gamma</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>ι</string>
+		<key>shortcut</key>
+		<string>iota</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>Ι</string>
+		<key>shortcut</key>
+		<string>iota</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>κ</string>
+		<key>shortcut</key>
+		<string>kappa</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>Κ</string>
+		<key>shortcut</key>
+		<string>kappa</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>λ</string>
+		<key>shortcut</key>
+		<string>lambda</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>Λ</string>
+		<key>shortcut</key>
+		<string>lambda</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>μ</string>
+		<key>shortcut</key>
+		<string>mu</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>Μ</string>
+		<key>shortcut</key>
+		<string>mu</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>ν</string>
+		<key>shortcut</key>
+		<string>nu</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>Ν</string>
+		<key>shortcut</key>
+		<string>nu</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>ω</string>
+		<key>shortcut</key>
+		<string>omega</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>Ω</string>
+		<key>shortcut</key>
+		<string>omega</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>ο</string>
+		<key>shortcut</key>
+		<string>omicron</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>Ο</string>
+		<key>shortcut</key>
+		<string>omicron</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>φ</string>
+		<key>shortcut</key>
+		<string>phi</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>Φ</string>
+		<key>shortcut</key>
+		<string>phi</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>π</string>
+		<key>shortcut</key>
+		<string>pi</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>Π</string>
+		<key>shortcut</key>
+		<string>pi</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>ψ</string>
+		<key>shortcut</key>
+		<string>psi</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>Ψ</string>
+		<key>shortcut</key>
+		<string>psi</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>ρ</string>
+		<key>shortcut</key>
+		<string>rho</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>Ρ</string>
+		<key>shortcut</key>
+		<string>rho</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>σ</string>
+		<key>shortcut</key>
+		<string>sigma</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>Σ</string>
+		<key>shortcut</key>
+		<string>sigma</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>τ</string>
+		<key>shortcut</key>
+		<string>tau</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>Τ</string>
+		<key>shortcut</key>
+		<string>tau</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>θ</string>
+		<key>shortcut</key>
+		<string>theta</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>Θ</string>
+		<key>shortcut</key>
+		<string>theta</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>υ</string>
+		<key>shortcut</key>
+		<string>upsilon</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>Υ</string>
+		<key>shortcut</key>
+		<string>upsilon</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>ξ</string>
+		<key>shortcut</key>
+		<string>xi</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>Ξ</string>
+		<key>shortcut</key>
+		<string>xi</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>Ζ</string>
+		<key>shortcut</key>
+		<string>zelta</string>
+	</dict>
+	<dict>
+		<key>phrase</key>
+		<string>ζ</string>
+		<key>shortcut</key>
+		<string>zeta</string>
+	</dict>
 </array>
 </plist>

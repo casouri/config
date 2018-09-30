@@ -4,291 +4,291 @@
 <array>
 	<dict>
 		<key>phrase</key>
-		<string>Α</string>
+		<string>α</string>
 		<key>shortcut</key>
-		<string>alpha</string>
+		<string>:alpha:</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
-		<string>α</string>
+		<string>Α</string>
 		<key>shortcut</key>
-		<string>alpha</string>
+		<string>:Alpha:</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
 		<string>β</string>
 		<key>shortcut</key>
-		<string>beta</string>
+		<string>:beta:</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
 		<string>Β</string>
 		<key>shortcut</key>
-		<string>beta</string>
+		<string>:Beta:</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
 		<string>χ</string>
 		<key>shortcut</key>
-		<string>chi</string>
+		<string>:chi:</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
 		<string>Χ</string>
 		<key>shortcut</key>
-		<string>chi</string>
+		<string>:Chi:</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
 		<string>δ</string>
 		<key>shortcut</key>
-		<string>delta</string>
+		<string>:delta:</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
 		<string>Δ</string>
 		<key>shortcut</key>
-		<string>delta</string>
+		<string>:Delta:</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
 		<string>ε</string>
 		<key>shortcut</key>
-		<string>epsilon</string>
+		<string>:epsilon:</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
 		<string>Ε</string>
 		<key>shortcut</key>
-		<string>epsilon</string>
+		<string>:Epsilon:</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
 		<string>η</string>
 		<key>shortcut</key>
-		<string>eta</string>
+		<string>:eta:</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
 		<string>Η</string>
 		<key>shortcut</key>
-		<string>eta</string>
+		<string>:Eta:</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
 		<string>γ</string>
 		<key>shortcut</key>
-		<string>gamma</string>
+		<string>:gamma:</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
 		<string>Γ</string>
 		<key>shortcut</key>
-		<string>gamma</string>
+		<string>:Gamma:</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
 		<string>ι</string>
 		<key>shortcut</key>
-		<string>iota</string>
+		<string>:iota:</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
 		<string>Ι</string>
 		<key>shortcut</key>
-		<string>iota</string>
+		<string>:Iota:</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
 		<string>κ</string>
 		<key>shortcut</key>
-		<string>kappa</string>
+		<string>:kappa:</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
 		<string>Κ</string>
 		<key>shortcut</key>
-		<string>kappa</string>
+		<string>:Kappa:</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
 		<string>λ</string>
 		<key>shortcut</key>
-		<string>lambda</string>
+		<string>:lambda:</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
 		<string>Λ</string>
 		<key>shortcut</key>
-		<string>lambda</string>
+		<string>:Lambda:</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
 		<string>μ</string>
 		<key>shortcut</key>
-		<string>mu</string>
+		<string>:mu:</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
 		<string>Μ</string>
 		<key>shortcut</key>
-		<string>mu</string>
+		<string>:Mu:</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
 		<string>ν</string>
 		<key>shortcut</key>
-		<string>nu</string>
+		<string>:nu:</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
 		<string>Ν</string>
 		<key>shortcut</key>
-		<string>nu</string>
+		<string>:Nu:</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
 		<string>ω</string>
 		<key>shortcut</key>
-		<string>omega</string>
+		<string>:omega:</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
 		<string>Ω</string>
 		<key>shortcut</key>
-		<string>omega</string>
+		<string>:Omega:</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
 		<string>ο</string>
 		<key>shortcut</key>
-		<string>omicron</string>
+		<string>:omicron:</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
 		<string>Ο</string>
 		<key>shortcut</key>
-		<string>omicron</string>
+		<string>:Omicron:</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
 		<string>φ</string>
 		<key>shortcut</key>
-		<string>phi</string>
+		<string>:phi:</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
 		<string>Φ</string>
 		<key>shortcut</key>
-		<string>phi</string>
+		<string>:Phi:</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
 		<string>π</string>
 		<key>shortcut</key>
-		<string>pi</string>
+		<string>:pi:</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
 		<string>Π</string>
 		<key>shortcut</key>
-		<string>pi</string>
+		<string>:Pi:</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
 		<string>ψ</string>
 		<key>shortcut</key>
-		<string>psi</string>
+		<string>:psi:</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
 		<string>Ψ</string>
 		<key>shortcut</key>
-		<string>psi</string>
+		<string>:Psi:</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
 		<string>ρ</string>
 		<key>shortcut</key>
-		<string>rho</string>
+		<string>:rho:</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
 		<string>Ρ</string>
 		<key>shortcut</key>
-		<string>rho</string>
+		<string>:Rho:</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
 		<string>σ</string>
 		<key>shortcut</key>
-		<string>sigma</string>
+		<string>:sigma:</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
 		<string>Σ</string>
 		<key>shortcut</key>
-		<string>sigma</string>
+		<string>:Sigma:</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
 		<string>τ</string>
 		<key>shortcut</key>
-		<string>tau</string>
+		<string>:tau:</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
 		<string>Τ</string>
 		<key>shortcut</key>
-		<string>tau</string>
+		<string>:Tau:</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
 		<string>θ</string>
 		<key>shortcut</key>
-		<string>theta</string>
+		<string>:theta:</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
 		<string>Θ</string>
 		<key>shortcut</key>
-		<string>theta</string>
+		<string>:Theta:</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
 		<string>υ</string>
 		<key>shortcut</key>
-		<string>upsilon</string>
+		<string>:upsilon:</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
 		<string>Υ</string>
 		<key>shortcut</key>
-		<string>upsilon</string>
+		<string>:Upsilon:</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
 		<string>ξ</string>
 		<key>shortcut</key>
-		<string>xi</string>
+		<string>:xi:</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
 		<string>Ξ</string>
 		<key>shortcut</key>
-		<string>xi</string>
+		<string>:Xi:</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
 		<string>Ζ</string>
 		<key>shortcut</key>
-		<string>zelta</string>
+		<string>:Zelta:</string>
 	</dict>
 	<dict>
 		<key>phrase</key>
 		<string>ζ</string>
 		<key>shortcut</key>
-		<string>zeta</string>
+		<string>:zeta:</string>
 	</dict>
 </array>
 </plist>
