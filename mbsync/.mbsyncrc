@@ -1,0 +1,58 @@
+IMAPAccount gmail
+# Address to connect to
+Host imap.gmail.com
+User casouri@gmail.com
+# To store the password in an encrypted file use PassCmd instead of Pass
+PassCmd "gpg -q --for-your-eyes-only --no-tty -d ~/key/gmailpass.gpg"
+#
+# Use SSL
+SSLType IMAPS
+AuthMechs LOGIN
+
+# The following line should work. If get certificate errors, uncomment the two following lines and read the "Troubleshooting" section.
+# CertificateFile /etc/ssl/certs/ca-certificates.crt
+#CertificateFile ~/.cert/imap.gmail.com.pem
+#CertificateFile ~/.cert/Equifax_Secure_CA.pem
+
+IMAPStore gmail-remote
+Account gmail
+
+MaildirStore gmail-local
+Path ~/Mail/Gmail/
+SubFolders Verbatim
+Inbox ~/Mail/Gmail/Inbox
+
+Channel gmail
+Master :gmail-remote:
+Slave :gmail-local:
+# Exclude everything under the internal [Gmail] folder, except the interesting folders
+Patterns * ![Gmail]* "[Gmail]/Sent Mail" "[Gmail]/Starred" "[Gmail]/All Mail"
+# Or include everything
+#Patterns *
+# Automatically create missing mailboxes, both locally and on the server
+Create Both
+# Save the synchronization state files in the relevant directory
+SyncState *
+
+
+IMAPAccount psu
+Host outlook.office365.com
+User ykf5041@psu.edu
+PassCmd "gpg -q --for-your-eyes-only --no-tty -d ~/key/psupass.gpg"
+SSLType IMAPS
+AuthMechs LOGIN
+
+IMAPStore psu-remote
+Account psu
+
+MaildirStore psu-local
+Path ~/Mail/PSU/
+SubFolders Verbatim
+Inbox ~/Mail/PSU/Inbox
+
+Channel psu
+Master :psu-remote:
+Slave :psu-local:
+Patterns "Archive" "Sent Items"
+Create Both
+SyncState *
