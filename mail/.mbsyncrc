@@ -1,4 +1,5 @@
 IMAPAccount gmail
+Timeout 30
 # Address to connect to
 Host imap.gmail.com
 User casouri@gmail.com
@@ -20,13 +21,13 @@ Account gmail
 MaildirStore gmail-local
 Path ~/Mail/Gmail/
 SubFolders Verbatim
-Inbox ~/Mail/Gmail/Inbox
+# Inbox ~/Mail/Gmail/Inbox
 
 Channel gmail
 Master :gmail-remote:
 Slave :gmail-local:
 # Exclude everything under the internal [Gmail] folder, except the interesting folders
-Patterns * ![Gmail]* "[Gmail]/Sent Mail" "[Gmail]/Starred" "[Gmail]/All Mail"
+Patterns * ![Gmail]* "[Gmail]/All Mail"
 # Or include everything
 #Patterns *
 # Automatically create missing mailboxes, both locally and on the server
@@ -53,6 +54,6 @@ Inbox ~/Mail/PSU/Inbox
 Channel psu
 Master :psu-remote:
 Slave :psu-local:
-Patterns "Archive" "Sent Items"
+Patterns "*"
 Create Both
 SyncState *

@@ -1,0 +1,30 @@
+#!/bin/bash
+
+echo "Download Mails"
+mbsync gmail
+mbsync psu
+
+echo "Re-file with notmuch"
+notmuch new
+
+# Sent
+notmuch tag +sent from:casouri@gmail.com or from:ykf5042@psu.edu and not tag:sent
+
+# News
+notmuch tag +news from:collegetowncommunities and not tag:news
+notmuch tag +news from:pnc and not tag:news
+notmuch tag +news from:ebay and not tag:news
+notmuch tag +news from:amazon and not tag:news
+notmuch tag +news from:uniqlo and not tag:news
+notmuch tag +news from:emacs-china and not tag:news
+notmuch tag +news from:apple and not tag:news
+notmuch tag +news from:twitter and not tag:news
+notmuch tag +news from:facebook and not tag:news
+notmuch tag +news from:instagram and not tag:news
+notmuch tag +news from:microsoft and not tag:news
+notmuch tag +news from:instructables and not tag:news
+
+# Mailling list
+notmuch tag +mailling-list cc:emacs-devel and not tag:mailling-list
+
+echo "See you space cowboy..."
