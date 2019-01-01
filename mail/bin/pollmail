@@ -1,9 +1,5 @@
 #!/bin/bash
 
-echo "Download Mails"
-mbsync gmail
-mbsync psu
-
 echo "Re-file with notmuch"
 notmuch new
 
@@ -26,5 +22,8 @@ notmuch tag +news from:instructables and not tag:news
 
 # Mailling list
 notmuch tag +mailling-list cc:emacs-devel and not tag:mailling-list
+
+# Other
+notmuch tag +other not tag:news and not tag:mailling-list and not tag:sent and to:casouri@gmail.com
 
 echo "See you space cowboy..."

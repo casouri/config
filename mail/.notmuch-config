@@ -48,7 +48,7 @@ other_email=ykf5041@psu.edu;
 #		in the mail store.
 #
 [new]
-tags=unread;inbox;
+tags=inbox;
 ignore=trash
 
 # Search configuration

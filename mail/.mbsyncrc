@@ -21,13 +21,13 @@ Account gmail
 MaildirStore gmail-local
 Path ~/Mail/Gmail/
 SubFolders Verbatim
-# Inbox ~/Mail/Gmail/Inbox
+Inbox ~/Mail/Gmail/Inbox
 
 Channel gmail
 Master :gmail-remote:
 Slave :gmail-local:
 # Exclude everything under the internal [Gmail] folder, except the interesting folders
-Patterns * ![Gmail]* "[Gmail]/All Mail"
+Patterns * ![Gmail]*
 # Or include everything
 #Patterns *
 # Automatically create missing mailboxes, both locally and on the server
