@@ -2,4 +2,19 @@
 
 Managed by stow.
 
+* Applications
 
+Target directory:
+
+- default: parent dir (so the target dir is home dir if this repo is in home dir)
+
+- v2ray: =/usr/local/=
+
+* Fonts
+Some in font directory. Rest:
+- Source Serif Pro
+- Source Sans Pro
+- Source Han Serif
+- Source Han Sans
+
+Download the super OTC release.
