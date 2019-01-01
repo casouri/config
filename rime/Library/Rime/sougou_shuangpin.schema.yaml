@@ -1,0 +1,132 @@
+# sougou_shuangpin.schema.yaml
+# Rime schema
+# encoding: utf-8
+# home page by 鶴: https://www.jianshu.com/p/b6a13061c74f
+schema:
+  schema_id: sougou_shuangpin
+  name: 搜狗双拼
+  version: "0.17"
+  author:
+    - double pinyin layout by 鶴
+    - Rime schema by 佛振 <chen.sst@gmail.com>
+    - Yuan Fu <casouri@gmail.com>
+  description:
+    朙月拼音＋搜狗雙拼方案。
+  dependencies:
+    - stroke
+switches:
+  - name: ascii_mode
+    reset: 1
+    states: [ 中文, 西文 ]
+  - name: full_shape
+    states: [ 半角, 全角 ]
+  - name: ascii_punct
+    states: [ ，。, ，． ]
+  - name: simplification
+    reset: 1
+    states: [ 漢字, 汉字 ]
+engine:
+  processors:
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    # - express_editor
+    - fluid_editor # 使用语句流
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - reverse_lookup_translator
+    - script_translator
+  filters:
+    - simplifier
+    - uniquifier
+speller:
+  alphabet: 'zyxwvutsrqponmlkjihgfedcba";"'
+  delimiter: " '"
+  algebra:
+    - erase/^xx$/
+    - derive/^([jqxy])u$/$1v/
+    - derive/^([aoe])([ioun])$/$1$1$2/
+    - derive/^([zcs])([^h])/$1h$2/
+    - xform/^([aoe].*)$/O$1/
+    - xform/^([aoe])(ng)?$/$1$1$2/
+    - xform/iu$/Q/
+    - xform/[iu]a$/$1W/
+    - xform/[iu]ang$/$1D/
+    - xform/uan$|er$/R/
+    - xform/[uv]e$/T/
+    - xform/uai|v$/Y/
+    - xform/^sh/U/
+    - xform/^ch/I/
+    - xform/^zh|ui$/V/
+    - xform/uo$/O/
+    - xform/un$/P/
+    - xform/i?ong$/S/
+    - xform/iao$/$1C/
+    - xform/(.)ao$/$1K/
+    - xform/(.)en$/$1F/
+    - xform/(.)eng$/$1G/
+    - xform/(.)ai$/$1L/
+    - xform/(.)ang$/$1H/
+    - xform/ian$/$1M/
+    - xform/(.)an$/$1J/
+    - xform/(.)ei$/$1Z/
+    - xform/ie$/X/
+    - xform/in$/N/
+    - xform/ui$/V/
+    - xform/(.)ou$/$1B/
+    - xform/ing$/$1;/
+    - xlit/QWERTYUIOPASDFGHJKLZXCVBNM/qwertyuiopasdfghjklzxcvbnm/
+    - abbrev/^(.).+$/$1/
+
+translator:
+  dictionary: luna_pinyin
+  prism: sougou_shuangpin
+  preedit_format:
+    - xform/([bpmfdtnljqx])n/$1in/
+    - xform/(\w)g/$1eng/
+    - xform/(\w)q/$1iu/
+    - xform/(\w)w/$1ei/
+    - xform/([dtnlgkhjqxyvuirzcs])r/$1uan/
+    - xform/(\w)t/$1ve/
+    - xform/([nl])y/$1ü/
+    - xform/(\w)y/$1un/
+    - xform/([dtnlgkhvuirzcs])o/$1uo/
+    - xform/(\w)p/$1un/
+    - xform/([jqx])s/$1iong/
+    - xform/(\w)s/$1ong/
+    - xform/([ljnqx])d/$1iang/
+    - xform/([ckghsz])d/$1uang/
+    - xform/(\w)f/$1en/
+    - xform/(\w)h/$1ang/
+    - xform/(\w)j/$1an/
+    - xform/(\w)k/$1ao/
+    - xform/(\w)l/$1ai/
+    - xform/(\w)z/$1ei/
+    - xform/(\w)x/$1ie/
+    - xform/(\w)c/$1iao/
+    - xform/([dtgkhvuirzcs])v/$1ui/
+    - xform/(\w)b/$1ou/
+    - xform/(\w);/$1ing/
+    - xform/(\w)m/$1ian/
+    - xform/([aoe])\1(\w)/$1$2/
+    - "xform/(^|[ '])v/$1zh/"
+    - "xform/(^|[ '])i/$1ch/"
+    - "xform/(^|[ '])u/$1sh/"
+punctuator:
+  import_preset: default
+key_binder:
+  import_preset: default
+recognizer:
+  import_preset: default
+  patterns:
+    reverse_lookup: "`[a-z]*'?$"
