@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>EnvironmentVariables</key>
+	<dict>
+		<key>PATH</key>
+		<string>/usr/bin:/usr/local/bin:/usr/local/sbin:/usr/sbin:/sbin</string>
+	</dict>
+	<key>Label</key>
+	<string>me.yuan.gmailfetch</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/usr/local/bin/mbsync</string>
+		<string>gmail</string>
+	</array>
+	<key>RunAtLoad</key>
+	<true/>
+	<key>StandardErrorPath</key>
+	<string>/tmp/me.yuan.gmailfetch.err</string>
+	<key>StandardOutPath</key>
+	<string>/tmp/me.yuan.gmailfetch.out</string>
+	<key>StartInterval</key>
+	<integer>300</integer>
+</dict>
+</plist>
