@@ -37,7 +37,7 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 export ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
 
 # history substring search
-source ~/.zsh/zsh-history-substring-seach/zsh-history-substring-search.zsh
+source ~/.zsh/zsh-history-substring-search/zsh-history-substring-search.zsh
 
 # prompt
 # single quote or "!" is expanded for history
