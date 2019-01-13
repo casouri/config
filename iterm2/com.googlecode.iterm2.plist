@@ -421,13 +421,15 @@
 	<key>NSWindow Frame SUStatusFrame</key>
 	<string>631 383 400 129 0 0 1440 877 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>443 363 620 392 0 0 1440 877 </string>
+	<string>440 363 620 392 0 0 1440 877 </string>
+	<key>NSWindow Frame SessionsPreferences</key>
+	<string>269 126 606 469 0 0 1440 877 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>265 305 1016 512 0 0 1440 877 </string>
+	<string>265 147 918 512 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>475 172 810 506 0 0 1440 877 </string>
+	<string>236 172 978 618 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>176 70 810 506 0 0 1440 877 </string>
+	<string>222 143 810 506 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>197 47 810 506 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
@@ -701,7 +703,7 @@
 			<key>Columns</key>
 			<integer>100</integer>
 			<key>Command</key>
-			<string>/bin/zsh --login</string>
+			<string>/usr/local/bin/zsh --login</string>
 			<key>Cursor Color</key>
 			<dict>
 				<key>Alpha Component</key>
@@ -1299,7 +1301,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-10-27T02:30:11Z</date>
+	<date>2019-01-12T02:43:31Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SmartPlacement</key>
@@ -1315,7 +1317,7 @@
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.2.4</string>
+	<string>3.2.6</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>

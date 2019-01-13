@@ -1,3 +1,5 @@
+# https://wiki.archlinux.org/index.php/Zsh
+
 # completion menu
 autoload -Uz compinit
 compinit
@@ -15,6 +17,7 @@ unsetopt MENU_COMPLETE     # Do not autoselect the first completion entry.
 unsetopt FLOW_CONTROL      # Disable start/stop characters in shell editor.
 
 ## Group matches and describe.
+# prezto
 zstyle ':completion:*:*:*:*:*' menu select
 zstyle ':completion:*:matches' group 'yes'
 zstyle ':completion:*:options' description 'yes'
@@ -40,9 +43,10 @@ export ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
 source ~/.zsh/zsh-history-substring-search/zsh-history-substring-search.zsh
 
 # prompt
+# http://zsh.sourceforge.net/Doc/Release/Prompt-Expansion.html
 # single quote or "!" is expanded for history
 # export PROMPT='%~/ %(?.∠( ᐛ 」∠%)_._(´ཀ`」∠%)_) %(!.!.>) '
-export PROMPT='%~/ %(?.OK.XX) %(!.!.>) '
+export PROMPT='%~/ %(?.OK.%F{red}XX%f) %(!.!.>) '
 
 # bind key
 bindkey -e
@@ -67,3 +71,8 @@ setopt HIST_BEEP              # Beep when accessing non-existent history.
 
 
 # alias
+alias ll="ls -l"
+alias la="ls -al"
+alias ac=alias2c
+alias tsh=trash
+alias ..="cd .."
