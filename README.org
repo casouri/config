@@ -2,13 +2,47 @@
 
 Managed by stow.
 
-* Applications
+* Stow
 
 Target directory:
 
 - default: parent dir (so the target dir is home dir if this repo is in home dir)
 
 - v2ray: =/usr/local/=
+
+* Applications
+
+#+BEGIN_SRC
+ccls
+cheat
+cmake
+gdb
+ghostscript
+gnupg
+imagemagick
+ispell
+lua
+luarocks
+make
+node
+poppler
+ripgrep
+sbcl
+stow
+terminal-notifier
+texinfo
+trash
+tree
+v2ray-core
+wget
+zsh
+fish
+basic-tex
+
+# cask
+java
+java8
+#+END_SRC
 
 * Fonts
 Some in font directory. Rest:
