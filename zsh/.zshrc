@@ -68,3 +68,5 @@ setopt HIST_SAVE_NO_DUPS      # Do not write a duplicate event to the history fi
 setopt HIST_VERIFY            # Do not execute immediately upon history expansion.
 setopt HIST_BEEP              # Beep when accessing non-existent history.
 
+# syntax highlight
+source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
