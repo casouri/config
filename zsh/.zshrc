@@ -68,11 +68,3 @@ setopt HIST_SAVE_NO_DUPS      # Do not write a duplicate event to the history fi
 setopt HIST_VERIFY            # Do not execute immediately upon history expansion.
 setopt HIST_BEEP              # Beep when accessing non-existent history.
 
-
-
-# alias
-alias ll="ls -l"
-alias la="ls -al"
-alias ac=alias2c
-alias tsh=trash
-alias ..="cd .."
