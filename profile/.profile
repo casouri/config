@@ -4,7 +4,7 @@
 export LANG="en_US.UTF-8"
 
 ## ensure /usr/local/bin
-export PATH="/usr/local/bin/:$PATH"
+export PATH="/usr/local/bin/:~/bin/:$PATH"
 
 ## Java
 export JAVA_HOME=$(/usr/libexec/java_home -v 1.8.0_192)
@@ -34,7 +34,7 @@ export MANPATH="$MANPATH:/usr/local/opt/make/libexec/gnuman"
 ## Cheat
 export CHEATCOLORS=true
 
-## pef-tools
+## pdf-tools
 export PKG_CONFIG_PATH=/usr/local/Cellar/zlib/1.2.8/lib/pkgconfig:/usr/local/lib/pkgconfig:/opt/X11/lib/pkgconfig
 
 
@@ -48,3 +48,10 @@ alias la="ls -al"
 alias ac=alias2c
 alias tsh=trash
 alias ..="cd .."
+# download whole site
+alias get-site="wget -r -np"
+
+# Use cat as pager in Emacs
+if [ -v INSIDE_EMACS ]; then
+   export PAGER=cat;
+fi
