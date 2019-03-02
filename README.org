@@ -52,3 +52,21 @@ Some in font directory. Rest:
 - Source Han Sans
 
 Download the super OTC release.
+
+* Dictionary
+[[http://jsomers.net/blog/dictionary][article]]
+[[https://github.com/ponychicken/WebsterParser][option 1]]
+[[https://github.com/aparks517/convert-websters][option 2]]
+
+* Common Lisp
+** Quicklisp
+[[https://www.quicklisp.org/beta/][quicklisp]]
+#+BEGIN_SRC shell
+curl -O https://beta.quicklisp.org/quicklisp.lisp
+sbcl --load quicklisp.lisp
+#+END_SRC
+
+#+BEGIN_SRC lisp
+(quicklisp-quickstart:install)
+(quicklisp-quickstart:install)
+#+END_SRC
