@@ -1,0 +1,5 @@
+# Connect as client:
+netcat 127.0.0.1 9999
+
+# Listen as server:
+netcat -l -p 9999
