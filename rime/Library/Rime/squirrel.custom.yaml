@@ -1,5 +1,6 @@
 patch:
-  style:
-    color_scheme: ink
-      # font_face: "Source Han Serif SC Regular"
-      # font_point: 20
+  # 只保留配色的硬核主题
+  # style:
+  #   color_scheme: ink
+  style/color_scheme: ink
+  style/corner_radius: 2

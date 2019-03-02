@@ -1,9 +1,7 @@
 patch:
-  menu:
-    page_size: 9
+  menu/page_size: 9
 
   schema_list:
     - schema: sougou_shuangpin
 
-  switcher:
-    fold_options: false
+  switcher/fold_options: false
