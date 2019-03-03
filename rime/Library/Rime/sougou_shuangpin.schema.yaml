@@ -33,7 +33,7 @@ engine:
     - selector
     - navigator
     - express_editor
-    # - fluid_editor # 不使用语句流
+    # - fluid_editor
   segmentors:
     - ascii_segmentor
     - matcher
@@ -89,6 +89,7 @@ speller:
 translator:
   dictionary: luna_pinyin
   prism: sougou_shuangpin
+  enable_user_dict: true
   preedit_format:
     - xform/([bpmfdtnljqx])n/$1in/
     - xform/(\w)g/$1eng/

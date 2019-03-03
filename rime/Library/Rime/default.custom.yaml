@@ -2,6 +2,8 @@ patch:
   menu/page_size: 9
 
   schema_list:
-    - schema: sougou_shuangpin
+    - schema: sougou_shuangpin # 只保留搜狗双拼
 
-  switcher/fold_options: false
+  switcher/fold_options: false # 不要折叠菜单
+
+  ascii_composer/switch_key/Shift_L: commit_code # 直接上屏，切换英文

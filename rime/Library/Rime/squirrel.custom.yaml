@@ -3,4 +3,6 @@ patch:
   # style:
   #   color_scheme: ink
   style/color_scheme: ink
-  style/corner_radius: 2
+  style/corner_radius: 3
+  # style/horizontal: true
+  style/font_point: 17
