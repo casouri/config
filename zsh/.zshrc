@@ -42,6 +42,11 @@ export ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
 # history substring search
 source ~/.zsh/zsh-history-substring-search/zsh-history-substring-search.zsh
 
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+bindkey -M emacs '^P' history-substring-search-up
+bindkey -M emacs '^N' history-substring-search-down
+
 # prompt
 # http://zsh.sourceforge.net/Doc/Release/Prompt-Expansion.html
 # single quote or "!" is expanded for history
