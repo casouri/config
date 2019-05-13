@@ -1,0 +1,21 @@
+{
+  "log": {
+    "loglevel": "info",
+    "access": "/tmp/v2ray/access.log",
+    "error": "/tmp/v2ray/error.log"
+  },
+  "inbounds": [{
+      "port": 12588,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [{
+            "id": "3e1cf932-6e00-4396-bcef-2254c74a3e2a",
+            "alterId": 64
+          }]}
+    }
+  ],
+  "outbounds": [{
+      "protocol": "freedom",
+      "settings": {}
+    }]
+}
