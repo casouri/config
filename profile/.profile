@@ -4,10 +4,11 @@
 export LANG="en_US.UTF-8"
 
 ## ensure /usr/local/bin
-export PATH="/usr/local/bin/:~/bin/:$PATH"
+export PATH="/usr/local/bin/:/Users/yuan/bin/:$PATH"
 
 ## Java
-export JAVA_HOME=$(/usr/libexec/java_home -v 1.8.0_192)
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.8.0_144)
+export DERBY_HOME="$JAVA_HOME/db"
 export PATH="$PATH:$JAVA_HOME"
 # add lsp for eglot
 export CLASSPATH=".:/Users/yuan/attic/eclipse.jdt.ls/org.eclipse.jdt.ls.product/target/repository/plugins/org.eclipse.equinox.launcher_1.5.200.v20180922-1751.jar"
@@ -43,8 +44,9 @@ export PKG_CONFIG_PATH=/usr/local/Cellar/zlib/1.2.8/lib/pkgconfig:/usr/local/lib
 alias ac="aria2c"
 alias f="fzf"
 alias ec="emacsclient -a emacs"
-alias ll="ls -l"
-alias la="ls -al"
+alias ls="ls -G"
+alias ll="ls -lG"
+alias la="ls -alG"
 alias ac=alias2c
 alias tsh=trash
 alias ..="cd .."
@@ -53,5 +55,10 @@ alias get-site="wget -r -np"
 
 # Use cat as pager in Emacs
 if [ -v INSIDE_EMACS ]; then
-   export PAGER=cat;
+    export PAGER=cat
+    export TERM=xterm-256color
+    # suppress echo in Emacs shell
+    # https://unix.stackexchange.com/questions/343088/what-is-the-equivalent-of-stty-echo-for-zsh
+    unsetopt ZLE
+    stty -echo
 fi
