@@ -51,7 +51,8 @@ bindkey -M emacs '^N' history-substring-search-down
 # http://zsh.sourceforge.net/Doc/Release/Prompt-Expansion.html
 # single quote or "!" is expanded for history
 # export PROMPT='%~/ %(?.∠( ᐛ 」∠%)_._(´ཀ`」∠%)_) %(!.!.>) '
-export PROMPT='%~/ %(?.OK.%F{red}XX%f) %(!.!.>) '
+# 141 is 265 color code for a light purple
+export PROMPT='%F{141}%~/%f %(?.吉.%F{red}凶%f) %(!.!.%F{141}>%f) '
 
 # bind key
 bindkey -e
