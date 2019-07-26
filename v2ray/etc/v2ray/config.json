@@ -1,8 +1,8 @@
 {
   "log": {
     "loglevel": "info",
-    "access": "/tmp/v2ray/access.log",
-    "error": "/tmp/v2ray/error.log"
+    "access": "/usr/local/var/log/v2ray.access.log",
+    "error": "/usr/local/var/log/v2ray.error.log"
   },
   "inbounds": [{
     "port": 1080,  // SOCKS 代理端口，在浏览器中需配置代理并指向这个端口
@@ -18,7 +18,8 @@
       "vnext": [{
         "address": "172.105.223.172", // 服务器地址，请修改为你自己的服务器 ip 或域名
         "port": 12588,  // 服务器端口
-        "users": [{ "id": "3e1cf932-6e00-4396-bcef-2254c74a3e2a" }]
+        "users": [{ "id": "1fe6bd2d-9358-46f7-aaf5-dc03ddca4ffa" }],
+        "alterid": 64
       }]
     }
   }, {
