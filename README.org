@@ -76,3 +76,6 @@ v2ray --config /usr/local/etc/v2ray/config.json
 #+BEGIN_SRC shell
 systemctl start v2ray.service
 #+END_SRC
+* Automator
+*(In iCloud)*
+- open dictionary :: set to cmd-D
