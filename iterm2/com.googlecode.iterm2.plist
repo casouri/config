@@ -421,17 +421,17 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>347 47 778 333 0 0 1280 777 </string>
+	<string>446 156 778 199 0 0 1280 777 </string>
 	<key>NSWindow Frame SUStatusFrame</key>
 	<string>436 348 400 129 0 0 1280 777 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>305 288 620 392 0 0 1280 777 </string>
+	<string>309 288 620 392 0 0 1280 777 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 126 606 469 0 0 1440 877 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>213 232 928 394 0 0 1280 777 </string>
+	<string>176 167 918 512 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>213 138 810 506 0 0 1280 777 </string>
+	<string>63 62 1058 682 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>222 143 810 506 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -660,13 +660,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.14044314716011286</real>
+				<real>0.20784313976764679</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.14044314716011286</real>
+				<real>0.17647059261798859</real>
 				<key>Red Component</key>
-				<real>0.14605712890625</real>
+				<real>0.15686275064945221</real>
 			</dict>
 			<key>Background Image Location</key>
 			<string></string>
@@ -713,13 +713,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.19341645995154977</real>
+				<real>0.58823525905609131</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.74264884488876248</real>
+				<real>0.58039218187332153</real>
 				<key>Red Component</key>
-				<real>0.918731689453125</real>
+				<real>0.51372557878494263</real>
 			</dict>
 			<key>Cursor Guide Color</key>
 			<dict>
@@ -739,13 +739,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.10388177074491978</real>
+				<real>0.25332435965538025</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.10388177074491978</real>
+				<real>0.20616915822029114</real>
 				<key>Red Component</key>
-				<real>0.108001708984375</real>
+				<real>0.0</real>
 			</dict>
 			<key>Custom Command</key>
 			<string>Yes</string>
@@ -1092,7 +1092,7 @@
 			<key>Normal Font</key>
 			<string>SFMono-Bold 13</string>
 			<key>Option Key Sends</key>
-			<integer>0</integer>
+			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
 			<false/>
 			<key>Right Option Key Sends</key>
@@ -1307,7 +1307,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-03-26T03:55:25Z</date>
+	<date>2019-06-16T13:37:35Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SmartPlacement</key>
@@ -1323,7 +1323,7 @@
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.2.7</string>
+	<string>3.2.9</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
