@@ -53,6 +53,11 @@ bindkey -M emacs '^N' history-substring-search-down
 # export PROMPT='%~/ %(?.∠( ᐛ 」∠%)_._(´ཀ`」∠%)_) %(!.!.>) '
 # 141 is 265 color code for a light purple
 export PROMPT='%F{141}%~/%f %(?.吉.%F{red}凶%f) %(!.!.%F{141}>%f) '
+# iTerm displays path in status bar
+if [ $TERM_PROGRAM = 'iTerm.app' ]
+then export PROMPT='%F{141}%1d/%f %(?.吉.%F{red}凶%f) %(!.!.%F{141}>%f) '
+fi
+
 
 # bind key
 bindkey -e
