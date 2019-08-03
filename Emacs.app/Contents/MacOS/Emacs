@@ -1,17 +1,4 @@
 #!/bin/bash
 # get me some 28 bytes baby
+source ~/.profile
 /usr/local/bin/emacs
-
-
-
-
-
-
-
-
-
-
-
-
-
-
