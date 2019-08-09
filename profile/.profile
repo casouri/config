@@ -38,6 +38,11 @@ export CHEATCOLORS=true
 ## pdf-tools
 export PKG_CONFIG_PATH=/usr/local/Cellar/zlib/1.2.8/lib/pkgconfig:/usr/local/lib/pkgconfig:/opt/X11/lib/pkgconfig
 
+## llvm/clang
+export PATH="/usr/local/opt/llvm/bin:$PATH"
+export LDFLAGS="-L/usr/local/opt/llvm/lib"
+export CPPFLAGS="-I/usr/local/opt/llvm/include"
+
 
 # Alias
 
@@ -47,18 +52,18 @@ alias ec="emacsclient -a emacs"
 alias ls="ls -G"
 alias ll="ls -lG"
 alias la="ls -alG"
-alias ac=alias2c
-alias tsh=trash
 alias ..="cd .."
 # download whole site
 alias get-site="wget -r -np"
+# tex package manager
+alias texpkg="tlmgr"
 
-# Use cat as pager in Emacs
+
+# Emacs
+
 if [ -v INSIDE_EMACS ]; then
+    # use cat as pager in Emacs
     export PAGER=cat
+    # use more color
     export TERM=xterm-256color
-    # suppress echo in Emacs shell
-    # https://unix.stackexchange.com/questions/343088/what-is-the-equivalent-of-stty-echo-for-zsh
-    unsetopt ZLE
-    stty -echo
 fi
