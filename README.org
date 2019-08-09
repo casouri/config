@@ -5,10 +5,12 @@ Managed by stow.
 * Stow
 Target directory:
 - default: parent dir (so the target dir is home dir if this repo is in home dir)
-- v2ray: =/usr/local/=
-- v2ray-server: =/=
+- v2ray: ~/usr/local/~
+- v2ray-server: ~/~
 
 * Applications
+*Homebrew*
+
 #+BEGIN_SRC
 ccls
 cheat
@@ -34,8 +36,13 @@ v2ray-core
 wget
 zsh
 fish
-basic-tex
+basictex (cask)
+makemkv (cask) - make mkv from disc
 #+END_SRC
+
+*Manual*
+
+- handbreak :: for transcoding videos
 
 * Fonts
 Some in font directory. Rest:
@@ -54,6 +61,7 @@ Download the super OTC release.
 * Common Lisp
 ** Quicklisp
 [[https://www.quicklisp.org/beta/][quicklisp]]
+
 #+BEGIN_SRC shell
 curl -O https://beta.quicklisp.org/quicklisp.lisp
 sbcl --load quicklisp.lisp
@@ -63,6 +71,7 @@ sbcl --load quicklisp.lisp
 (quicklisp-quickstart:install)
 (quicklisp-quickstart:install)
 #+END_SRC
+
 * App store
 - [[https://github.com/ddddxxx/LyricsX][LyricsX]]
 
@@ -76,6 +85,8 @@ v2ray --config /usr/local/etc/v2ray/config.json
 #+BEGIN_SRC shell
 systemctl start v2ray.service
 #+END_SRC
+
 * Automator
 *(In iCloud)*
+
 - open dictionary :: set to cmd-D
