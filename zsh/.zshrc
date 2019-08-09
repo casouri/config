@@ -54,9 +54,11 @@ bindkey -M emacs '^N' history-substring-search-down
 # 141 is 265 color code for a light purple
 export PROMPT='%F{141}%~/%f %(?.吉.%F{red}凶%f) %(!.!.%F{141}>%f) '
 # iTerm displays path in status bar
-if [ $TERM_PROGRAM = 'iTerm.app' ]
+if [ "$TERM_PROGRAM" = 'iTerm.app' ]
 then export PROMPT='%F{141}%1d/%f %(?.吉.%F{red}凶%f) %(!.!.%F{141}>%f) '
 fi
+
+
 
 
 # bind key
@@ -81,3 +83,10 @@ setopt HIST_BEEP              # Beep when accessing non-existent history.
 
 # syntax highlight
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# suppress echo in Emacs
+# https://unix.stackexchange.com/questions/343088/what-is-the-equivalent-of-stty-echo-for-zsh
+if [ -v INSIDE_EMACS ]; then
+    unsetopt ZLE
+    stty -echo
+fi
