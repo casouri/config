@@ -1,10 +1,14 @@
 # Set env
 
 ## locale
-export LANG="en_US.UTF-8"
+# export LANG="en_US.UTF-8"
 
 ## ensure /usr/local/bin
 export PATH="/usr/local/bin/:/Users/yuan/bin/:$PATH"
+
+## texinfo
+
+export PATH="/usr/local/opt/texinfo/bin:$PATH"
 
 ## Java
 export JAVA_HOME=$(/usr/libexec/java_home -v 1.8.0_144)
