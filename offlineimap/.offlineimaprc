@@ -1,0 +1,32 @@
+# Sample minimal config file.  Copy this to ~/.offlineimaprc and edit to
+# get started fast.
+
+[general]
+accounts = Main
+pythonfile = ~/.offlineimap.py
+autorefresh = 0.5
+quick = 10
+postsynchook = /usr/bin/afterofflineimap
+
+[Account Main]
+localrepository = Local
+remoterepository = Remote
+synclabels = yes
+
+[Repository Local]
+type = GmailMaildir
+localfolders = ~/Mail
+nametrans = localnametrans
+
+
+[Repository Remote]
+type = Gmail
+# remotehost = imap.gmail.com
+# remoteuser = casouri@gmail.com
+remotepasseval = getpass()
+remoteuser = casouri@gmail.com
+ssl=true
+sslcacertfile = /usr/local/etc/openssl/cert.pem
+ssl_version=tls1_2
+folderfilter = lambda folder: folder in ["INBOX", "Register", "[Gmail]/Sent Mail", "[Gmail]/Drafts"]
+nametrans = remotenametrans
