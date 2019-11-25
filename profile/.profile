@@ -4,18 +4,18 @@
 # export LANG="en_US.UTF-8"
 
 ## ensure /usr/local/bin
-export PATH="/usr/local/bin/:/Users/yuan/bin/:$PATH"
+export PATH="/Users/yuan/bin/:/usr/local/bin/:$PATH"
 
 ## texinfo
-
-export PATH="/usr/local/opt/texinfo/bin:$PATH"
+export PATH="$PATH:/usr/local/opt/texinfo/bin"
 
 ## Java
-export JAVA_HOME=$(/usr/libexec/java_home -v 1.8.0_144)
-export DERBY_HOME="$JAVA_HOME/db"
-export PATH="$PATH:$JAVA_HOME"
-# add lsp for eglot
-export CLASSPATH=".:/Users/yuan/attic/eclipse.jdt.ls/org.eclipse.jdt.ls.product/target/repository/plugins/org.eclipse.equinox.launcher_1.5.200.v20180922-1751.jar"
+# don’t need this anymore
+# export JAVA_HOME=$(/usr/libexec/java_home -v 1.8.0_144)
+# export DERBY_HOME="$JAVA_HOME/db"
+# export PATH="$PATH:$JAVA_HOME"
+# # add lsp for eglot
+# export CLASSPATH=".:/Users/yuan/attic/eclipse.jdt.ls/org.eclipse.jdt.ls.product/target/repository/plugins/org.eclipse.equinox.launcher_1.5.200.v20180922-1751.jar"
 
 ## Tools
 export VISUAL=vim
@@ -40,13 +40,16 @@ export MANPATH="$MANPATH:/usr/local/opt/make/libexec/gnuman"
 export CHEATCOLORS=true
 
 ## pdf-tools
-export PKG_CONFIG_PATH=/usr/local/Cellar/zlib/1.2.8/lib/pkgconfig:/usr/local/lib/pkgconfig:/opt/X11/lib/pkgconfig
+export PKG_CONFIG_PATH="/usr/local/Cellar/zlib/1.2.8/lib/pkgconfig:/usr/local/lib/pkgconfig:/opt/X11/lib/pkgconfig"
 
 ## llvm/clang
-export PATH="/usr/local/opt/llvm/bin:$PATH"
-export LDFLAGS="-L/usr/local/opt/llvm/lib"
-export CPPFLAGS="-I/usr/local/opt/llvm/include"
+export PATH="$PATH:/usr/local/opt/llvm/bin"
+# export LDFLAGS="-L/usr/local/opt/llvm/lib"
+# export CPPFLAGS="-I/usr/local/opt/llvm/include"
 
+# Include path
+export APPLE_SDK="$(xcrun --show-sdk-path)"
+export CPATH="$APPLE_SDK/usr/include"
 
 # Alias
 
@@ -62,10 +65,9 @@ alias get-site="wget -r -np"
 # tex package manager
 alias texpkg="tlmgr"
 
-
 # Emacs
 
-if [ -v INSIDE_EMACS ]; then
+if [ ! -z "$INSIDE_EMACS" ]; then
     # use cat as pager in Emacs
     export PAGER=cat
     # use more color
