@@ -12,19 +12,16 @@ Target directory:
 *Homebrew*
 
 #+BEGIN_SRC
-ccls
+ccls - C/C++ LSP
 cheat
 cmake
 gdb
-ghostscript
+ghostscript - postscript
 gnupg
 imagemagick
 ispell
-lua
-luarocks
 make
 node
-poppler
 ripgrep
 sbcl
 stow
@@ -35,9 +32,9 @@ tree
 v2ray-core
 wget
 zsh
-fish
 basictex (cask)
 makemkv (cask) - make mkv from disc
+testdisk - file recovery: testdisk & photorec
 #+END_SRC
 
 *Manual*
