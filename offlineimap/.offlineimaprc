@@ -4,14 +4,14 @@
 [general]
 accounts = Main
 pythonfile = ~/.offlineimap.py
-autorefresh = 0.5
-quick = 10
-postsynchook = /usr/bin/afterofflineimap
+# postsynchook = /usr/bin/afterofflineimap
 
 [Account Main]
 localrepository = Local
 remoterepository = Remote
 synclabels = yes
+# autorefresh = 0.5
+# quick = 10
 
 [Repository Local]
 type = GmailMaildir
@@ -30,3 +30,5 @@ sslcacertfile = /usr/local/etc/openssl/cert.pem
 ssl_version=tls1_2
 folderfilter = lambda folder: folder in ["INBOX", "Register", "[Gmail]/Sent Mail", "[Gmail]/Drafts"]
 nametrans = remotenametrans
+# keepalive = 60
+# holdconnectionopen = yes
