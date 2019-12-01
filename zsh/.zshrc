@@ -83,7 +83,21 @@ source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # suppress echo in Emacs
 # https://unix.stackexchange.com/questions/343088/what-is-the-equivalent-of-stty-echo-for-zsh
-if [ -v INSIDE_EMACS ]; then
-    unsetopt ZLE
-    stty -echo
-fi
+# ditch fshell for vterm
+# if [ -v INSIDE_EMACS ]; then
+#     unsetopt ZLE
+#     stty -echo
+# fi
+
+# vterm dir tracking
+vterm_prompt_end() {
+    printf "\e]51;A$(whoami)@$(hostname):$(pwd)\e\\";
+}
+PROMPT=$PROMPT"%{$(vterm_prompt_end)%}"
+
+# sync title
+# https://github.com/ohmyzsh/ohmyzsh/issues/5700
+function precmd () {
+  window_title="\033]0;${PWD##*/}\007"
+  echo -ne "$window_title"
+}
