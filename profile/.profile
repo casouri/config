@@ -3,22 +3,15 @@
 ## locale
 # export LANG="en_US.UTF-8"
 
-## ensure /usr/local/bin
-export PATH="/Users/yuan/bin/:/usr/local/bin/:$PATH"
+# macport
+export PATH="/Users/yuan/bin/:/opt/local/bin:/opt/local/sbin:$PATH"
+export MANPATH="/opt/local/share/man:$MANPATH"
 
 ## texinfo
 export PATH="$PATH:/usr/local/opt/texinfo/bin"
 
-## Java
-# don’t need this anymore
-# export JAVA_HOME=$(/usr/libexec/java_home -v 1.8.0_144)
-# export DERBY_HOME="$JAVA_HOME/db"
-# export PATH="$PATH:$JAVA_HOME"
-# # add lsp for eglot
-# export CLASSPATH=".:/Users/yuan/attic/eclipse.jdt.ls/org.eclipse.jdt.ls.product/target/repository/plugins/org.eclipse.equinox.launcher_1.5.200.v20180922-1751.jar"
-
 ## Tools
-export VISUAL=vim
+export VISUAL=e # emacsclient in ~/bin
 export EDITOR="$VISUAL"
 export BROWSER=open
 
@@ -41,11 +34,6 @@ export CHEATCOLORS=true
 
 ## pdf-tools
 export PKG_CONFIG_PATH="/usr/local/Cellar/zlib/1.2.8/lib/pkgconfig:/usr/local/lib/pkgconfig:/opt/X11/lib/pkgconfig"
-
-## llvm/clang
-export PATH="$PATH:/usr/local/opt/llvm/bin"
-# export LDFLAGS="-L/usr/local/opt/llvm/lib"
-# export CPPFLAGS="-I/usr/local/opt/llvm/include"
 
 # Include path
 export APPLE_SDK="$(xcrun --show-sdk-path)"

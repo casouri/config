@@ -12,14 +12,15 @@ Target directory:
 *Homebrew*
 
 #+BEGIN_SRC
-ccls - C/C++ LSP
+ccls (C/C++ LSP)
 cheat
 cmake
 gdb
-ghostscript - postscript
-gnupg
+ghostscript (postscript)
+gnupg2
 imagemagick
-ispell
+ispell / aspell
+aspell-dict-en
 make
 node
 ripgrep
@@ -30,9 +31,9 @@ texinfo
 trash
 tree
 v2ray-core
+aria2
 wget
-zsh
-basictex (cask)
+texlive-basic (basictex in homebrew)
 makemkv (cask) - make mkv from disc
 testdisk - file recovery: testdisk & photorec
 #+END_SRC
