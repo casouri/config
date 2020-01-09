@@ -5,13 +5,12 @@ Managed by stow.
 * Stow
 Target directory:
 - default: parent dir (so the target dir is home dir if this repo is in home dir)
-- v2ray: ~/usr/local/~
-- v2ray-server: ~/~
+- v2ray: =/opt/local=
+- v2ray-server: =/=
 
 * Applications
-*Homebrew*
-
 #+BEGIN_SRC
+inetutils # telnet, ftp, etc
 ccls (C/C++ LSP)
 cheat
 cmake
@@ -32,10 +31,13 @@ trash
 tree
 v2ray-core
 aria2
+iina
+git-lfs
 wget
 texlive-basic (basictex in homebrew)
 makemkv (cask) - make mkv from disc
 testdisk - file recovery: testdisk & photorec
+kawa - bind shortcuts to input methods
 #+END_SRC
 
 *Manual*
@@ -88,3 +90,8 @@ systemctl start v2ray.service
 *(In iCloud)*
 
 - open dictionary :: set to cmd-D
+* Windows
+
+- gammy :: adjust brightness by context automatically
+- idm :: internet download manager
+- 7z :: compress/extract files
