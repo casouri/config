@@ -15,8 +15,8 @@ export VISUAL=e # emacsclient in ~/bin
 export EDITOR="$VISUAL"
 export BROWSER=open
 
-## Python 3.7
-export PATH="$PATH:/usr/local/lib/python3.7:/usr/local/lib/python3.7/site-packages"
+## Python 3.8
+export PATH="$PATH:/Users/yuan/Library/Python/3.8/bin"
 export PIPENV_VENV_IN_PROJECT=true
 
 ## Rust
@@ -39,11 +39,12 @@ export PKG_CONFIG_PATH="/usr/local/Cellar/zlib/1.2.8/lib/pkgconfig:/usr/local/li
 export APPLE_SDK="$(xcrun --show-sdk-path)"
 export CPATH="$APPLE_SDK/usr/include"
 
+# info path
+export INFOPATH="/opt/local/share/info:/usr/local/share/info:/usr/share/info"
+
 # Alias
 
 alias ac="aria2c"
-alias f="fzf"
-alias ec="emacsclient -a emacs"
 alias ls="ls -G"
 alias ll="ls -lG"
 alias la="ls -alG"
@@ -52,12 +53,4 @@ alias ..="cd .."
 alias get-site="wget -r -np"
 # tex package manager
 alias texpkg="tlmgr"
-
-# Emacs
-
-if [ ! -z "$INSIDE_EMACS" ]; then
-    # use cat as pager in Emacs
-    export PAGER=cat
-    # use more color
-    export TERM=xterm-256color
-fi
+alias ccl="/Applications/Clozure\ CL.app/Contents/MacOS/dx86cl64"
