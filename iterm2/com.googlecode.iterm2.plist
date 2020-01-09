@@ -1830,7 +1830,7 @@
 			<key>Unicode Normalization</key>
 			<integer>0</integer>
 			<key>Unlimited Scrollback</key>
-			<false/>
+			<true/>
 			<key>Use Bold Font</key>
 			<true/>
 			<key>Use Bright Bold</key>
@@ -2644,7 +2644,7 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1280, 800}}</string>
 		<key>topLeft</key>
-		<string>{171, 696}</string>
+		<string>{184, 701}</string>
 	</dict>
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
@@ -3388,6 +3388,8 @@
 	</dict>
 	<key>NoSyncSearchHistory2</key>
 	<array>
+		<string>audio</string>
+		<string>autdio</string>
 		<string>dump</string>
 		<string>frame_idx 75</string>
 		<string>frame_idx75</string>
@@ -3396,7 +3398,6 @@
 		<string>close</string>
 		<string>size</string>
 		<string>count</string>
-		<string>tmp_buf</string>
 	</array>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>545867390.70337903</real>
@@ -3521,7 +3522,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-12-01T11:05:08Z</date>
+	<date>2019-12-08T17:30:30Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUSkippedVersion</key>
