@@ -5,7 +5,7 @@
     "error": "/usr/local/var/log/v2ray.error.log"
   },
   "inbounds": [{
-    "port": 1080,  // SOCKS 代理端口，在浏览器中需配置代理并指向这个端口
+    "port": 8088,  // SOCKS 代理端口，在浏览器中需配置代理并指向这个端口
     "listen": "127.0.0.1",
     "protocol": "socks",
     "settings": {
