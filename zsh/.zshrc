@@ -89,11 +89,11 @@ source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 #     stty -echo
 # fi
 
-# vterm dir tracking
-vterm_prompt_end() {
-    printf "\e]51;A$(whoami)@$(hostname):$(pwd)\e\\";
-}
-PROMPT=$PROMPT"%{$(vterm_prompt_end)%}"
+# Emacs vterm sync cwd
+if [ "$INSIDE_EMACS" = "vterm" ]
+   then setopt PROMPT_SUBST
+        PROMPT=$PROMPT'$(vterm_prompt_end)'
+fi
 
 # sync title
 # https://github.com/ohmyzsh/ohmyzsh/issues/5700
