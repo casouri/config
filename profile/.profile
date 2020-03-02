@@ -54,3 +54,4 @@ alias get-site="wget -r -np"
 # tex package manager
 alias texpkg="tlmgr"
 alias ccl="/Applications/Clozure\ CL.app/Contents/MacOS/dx86cl64"
+alias cdd="cd -"
