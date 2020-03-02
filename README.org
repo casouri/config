@@ -38,6 +38,8 @@ texlive-basic (basictex in homebrew)
 makemkv (cask) - make mkv from disc
 testdisk - file recovery: testdisk & photorec
 kawa - bind shortcuts to input methods
+xld - x lossless decoder https://arstechnica.com/
+Hidden Bar - hide icons in tool bar
 #+END_SRC
 
 *Manual*
