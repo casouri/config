@@ -34,17 +34,20 @@ aria2
 iina
 git-lfs
 wget
-texlive-basic (basictex in homebrew)
-makemkv (cask) - make mkv from disc
-testdisk - file recovery: testdisk & photorec
-kawa - bind shortcuts to input methods
-xld - x lossless decoder https://arstechnica.com/
-Hidden Bar - hide icons in tool bar
+handbrake      - video transcoder
+testdisk       - file recovery: testdisk & photorec
+kawa           - bind shortcuts to input methods
+xld            - x lossless decoder https://arstechnica.com/
+Hidden Bar     - hide icons in tool bar
+you-get        - (pip) download bilibili and others
+macism         - switch input source
 #+END_SRC
 
 *Manual*
 
-- handbreak :: for transcoding videos
+| handbreak | for transcoding videos |
+| makemkv   | make mkv from disc     |
+| TeXLive   | TeX suite              |
 
 * Fonts
 Some in font directory. Rest:

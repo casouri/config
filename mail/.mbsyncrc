@@ -21,39 +21,61 @@ Account gmail
 MaildirStore gmail-local
 Path ~/Mail/Gmail/
 SubFolders Verbatim
-Inbox ~/Mail/Gmail/Inbox
+Inbox ~/Mail/Gmail/INBOX
 
 Channel gmail
 Master :gmail-remote:
 Slave :gmail-local:
-# Exclude everything under the internal [Gmail] folder, except the interesting folders
-Patterns * ![Gmail]*
-# Or include everything
-#Patterns *
+Patterns INBOX "[Gmail]/Sent Mail" "[Gmail]/Drafts" "[Gmail]/Trash" Register emacs-devel ccl-devel emacs-debbugs
 # Automatically create missing mailboxes, both locally and on the server
 Create Both
-# Save the synchronization state files in the relevant directory
+# Save all synchronization state files in the relevant directory
 SyncState *
 
 
-IMAPAccount psu
-Host outlook.office365.com
-User ykf5041@psu.edu
-PassCmd "gpg -q --for-your-eyes-only --no-tty -d ~/key/psupass.gpg"
-SSLType IMAPS
-AuthMechs LOGIN
 
-IMAPStore psu-remote
-Account psu
+# IMAPAccount sdf
+# Host mx.sdf.org
+# User yuan
+# PassCmd "gpg -q --for-your-eyes-only --no-tty -d ~/key/sdfpass.gpg"
+# SSLType IMAPS
+# AuthMechs LOGIN
 
-MaildirStore psu-local
-Path ~/Mail/PSU/
-SubFolders Verbatim
-Inbox ~/Mail/PSU/Inbox
+# IMAPStore sdf-remote
+# Account sdf
 
-Channel psu
-Master :psu-remote:
-Slave :psu-local:
-Patterns "*"
-Create Both
-SyncState *
+# MaildirStore sdf-local
+# Path ~/Mail/SDF/
+# SubFolders Verbatim
+# Inbox ~/Mail/SDF/INBOX
+
+# Channel sdf
+# Master :sdf-remote:
+# Slave :sdf-local:
+# Patterns "*"
+# Create Both
+# SyncState *
+
+
+
+# IMAPAccount psu
+# Host outlook.office365.com
+# User ykf5041@psu.edu
+# PassCmd "gpg -q --for-your-eyes-only --no-tty -d ~/key/psupass.gpg"
+# SSLType IMAPS
+# AuthMechs LOGIN
+
+# IMAPStore psu-remote
+# Account psu
+
+# MaildirStore psu-local
+# Path ~/Mail/PSU/
+# SubFolders Verbatim
+# Inbox ~/Mail/PSU/INBOX
+
+# Channel psu
+# Master :psu-remote:
+# Slave :psu-local:
+# Patterns INBOX Archive Trash "Sent Items" Drafts
+# Create Both
+# SyncState *

@@ -4,11 +4,17 @@
 # export LANG="en_US.UTF-8"
 
 # macport
-export PATH="/Users/yuan/bin/:/opt/local/bin:/opt/local/sbin:$PATH"
+export PATH="$HOME/bin/:/opt/local/bin:/opt/local/sbin:$PATH"
 export MANPATH="/opt/local/share/man:$MANPATH"
+
+# cabal
+export PATH="$HOME/.cabal/bin:$PATH"
 
 ## texinfo
 export PATH="$PATH:/usr/local/opt/texinfo/bin"
+
+# lunarocks
+export PATH="$HOME/.luarocks/bin:$PATH"
 
 ## Tools
 export VISUAL=e # emacsclient in ~/bin
@@ -22,8 +28,8 @@ export PIPENV_VENV_IN_PROJECT=true
 ## Rust
 export PATH="$PATH:$HOME/.cargo/bin"
 
-## TeX
-export PATH="$PATH:/Library/TeX/texbin/"
+## TeX, we want TeX’s pdflatex to override macport’s.
+export PATH="/Library/TeX/texbin/:$PATH"
 
 ## GNU
 export PATH="$PATH:/usr/local/opt/make/libexec/gnubin"
@@ -40,7 +46,7 @@ export APPLE_SDK="$(xcrun --show-sdk-path)"
 export CPATH="$APPLE_SDK/usr/include"
 
 # info path
-export INFOPATH="/opt/local/share/info:/usr/local/share/info:/usr/share/info"
+export INFOPATH="~/emacs/info:/opt/local/share/info:/usr/local/share/info:/usr/share/info"
 
 # Alias
 
@@ -53,5 +59,8 @@ alias ..="cd .."
 alias get-site="wget -r -np"
 # tex package manager
 alias texpkg="tlmgr"
-alias ccl="/Applications/Clozure\ CL.app/Contents/MacOS/dx86cl64"
+# alias ccl="/Applications/Clozure\ CL.app/Contents/MacOS/dx86cl64"
+alias ccl="/Users/yuan/attic/ccl-dev/dx86cl64"
 alias cdd="cd -"
+alias bilibili="you-get"
+alias pastebin='curl -F "c=@-" "https://fars.ee/"'
