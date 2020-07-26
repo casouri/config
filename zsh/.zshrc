@@ -1,25 +1,19 @@
 # https://wiki.archlinux.org/index.php/Zsh
 
-# z.lua
+### z.lua
 
 # https://github.com/skywind3000/z.lua
 eval "$(lua ~/.zsh/z.lua/z.lua --init zsh)"
 # enhanced match
 export _ZL_MATCH_MODE=1
 
-
-
-
-# autosuggest
+### autosuggest
 
 # https://github.com/zsh-users/zsh-autosuggestions
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 export ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
 
-
-
-
-# history substring search
+### History substring search
 
 source ~/.zsh/zsh-history-substring-search/zsh-history-substring-search.zsh
 bindkey '^[[A' history-substring-search-up
@@ -27,10 +21,7 @@ bindkey '^[[B' history-substring-search-down
 bindkey -M emacs '^P' history-substring-search-up
 bindkey -M emacs '^N' history-substring-search-down
 
-
-
-
-# prompt
+### Prompt
 
 # http://zsh.sourceforge.net/Doc/Release/Prompt-Expansion.html
 # single quote or "!" is expanded for history
@@ -43,15 +34,8 @@ then export PROMPT='%F{141}%1d/%f %(?.吉.%F{red}凶%f) %(!.!.%F{141}>%f) '
 fi
 
 
+### History
 
-
-# bind key
-bindkey -e
-
-
-
-
-# history
 # https://github.com/sorin-ionescu/prezto/blob/master/modules/history/init.zsh
 export HISTSIZE=10000         # The maximum number of events to save in the internal history.
 export SAVEHIST=10000         # The maximum number of events to save in the history file.
@@ -68,8 +52,10 @@ setopt HIST_SAVE_NO_DUPS      # Do not write a duplicate event to the history fi
 setopt HIST_VERIFY            # Do not execute immediately upon history expansion.
 setopt HIST_BEEP              # Beep when accessing non-existent history.
 
+### Syntax highlight
 
-
-
-# syntax highlight
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+### bind key
+
+bindkey -e
