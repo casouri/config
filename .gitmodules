@@ -10,3 +10,6 @@
 [submodule "zsh/.zsh/zsh-syntax-highlighting"]
 	path = zsh/.zsh/zsh-syntax-highlighting
 	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
+[submodule "zsh/.zsh/z.lua"]
+	path = zsh/.zsh/z.lua
+	url = https://github.com/skywind3000/z.lua.git

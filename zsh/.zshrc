@@ -1,19 +1,37 @@
 # https://wiki.archlinux.org/index.php/Zsh
 
+# z.lua
+
+# https://github.com/skywind3000/z.lua
+eval "$(lua ~/.zsh/z.lua/z.lua --init zsh)"
+# enhanced match
+export _ZL_MATCH_MODE=1
+
+
+
+
 # autosuggest
+
 # https://github.com/zsh-users/zsh-autosuggestions
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 export ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
 
-# history substring search
-source ~/.zsh/zsh-history-substring-search/zsh-history-substring-search.zsh
 
+
+
+# history substring search
+
+source ~/.zsh/zsh-history-substring-search/zsh-history-substring-search.zsh
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 bindkey -M emacs '^P' history-substring-search-up
 bindkey -M emacs '^N' history-substring-search-down
 
+
+
+
 # prompt
+
 # http://zsh.sourceforge.net/Doc/Release/Prompt-Expansion.html
 # single quote or "!" is expanded for history
 # export PROMPT='%~/ %(?.∠( ᐛ 」∠%)_._(´ཀ`」∠%)_) %(!.!.>) '
@@ -24,8 +42,14 @@ if [ "$TERM_PROGRAM" = 'iTerm.app' ]
 then export PROMPT='%F{141}%1d/%f %(?.吉.%F{red}凶%f) %(!.!.%F{141}>%f) '
 fi
 
+
+
+
 # bind key
 bindkey -e
+
+
+
 
 # history
 # https://github.com/sorin-ionescu/prezto/blob/master/modules/history/init.zsh
@@ -44,43 +68,8 @@ setopt HIST_SAVE_NO_DUPS      # Do not write a duplicate event to the history fi
 setopt HIST_VERIFY            # Do not execute immediately upon history expansion.
 setopt HIST_BEEP              # Beep when accessing non-existent history.
 
+
+
+
 # syntax highlight
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-# suppress echo in Emacs
-# https://unix.stackexchange.com/questions/343088/what-is-the-equivalent-of-stty-echo-for-zsh
-# ditch fshell for vterm
-# if [ -v INSIDE_EMACS ]; then
-#     unsetopt ZLE
-#     stty -echo
-# fi
-
-# Emacs vterm sync cwd
-function vterm_printf(){
-    if [ -n "$TMUX" ]; then
-        # tell tmux to pass the escape sequences through
-        # (Source: http://permalink.gmane.org/gmane.comp.terminal-emulators.tmux.user/1324)
-        printf "\ePtmux;\e\e]%s\007\e\\" "$1"
-    elif [ "${TERM%%-*}" = "screen" ]; then
-        # GNU screen (screen, screen-256color, screen-256color-bce)
-        printf "\eP\e]%s\007\e\\" "$1"
-    else
-        printf "\e]%s\e\\" "$1"
-    fi
-}
-
-vterm_prompt_end() {
-    vterm_printf "51;A$(whoami)@$(hostname):$(pwd)";
-}
-
-if [ "$INSIDE_EMACS" = "vterm" ]
-   then setopt PROMPT_SUBST
-        PROMPT=$PROMPT'$(vterm_prompt_end)'
-fi
-
-# sync title
-# https://github.com/ohmyzsh/ohmyzsh/issues/5700
-function precmd () {
-  window_title="\033]0;${PWD##*/}\007"
-  echo -ne "$window_title"
-}
