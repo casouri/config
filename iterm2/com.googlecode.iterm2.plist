@@ -732,6 +732,8 @@
 	</dict>
 	<key>HapticFeedbackForEsc</key>
 	<false/>
+	<key>HideActivityIndicator</key>
+	<false/>
 	<key>Hotkey</key>
 	<true/>
 	<key>HotkeyChar</key>
@@ -839,7 +841,7 @@
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>80 193 592 584 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>24 178 810 505 0 0 1280 777 </string>
+	<string>118 193 810 505 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>215 118 810 505 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -859,6 +861,8 @@
 			<false/>
 			<key>Allow Title Reporting</key>
 			<true/>
+			<key>Allow Title Setting</key>
+			<false/>
 			<key>Ambiguous Double Width</key>
 			<false/>
 			<key>Ansi 0 Color</key>
@@ -1123,7 +1127,7 @@
 			<key>Columns</key>
 			<integer>100</integer>
 			<key>Command</key>
-			<string>zsh --login</string>
+			<string>~/bin/zfish</string>
 			<key>Cursor Color</key>
 			<dict>
 				<key>Alpha Component</key>
@@ -1581,7 +1585,7 @@
 			<key>Mouse Reporting</key>
 			<true/>
 			<key>Name</key>
-			<string>Default</string>
+			<string>DAZE</string>
 			<key>Non Ascii Font</key>
 			<string>SFMono-Medium 13</string>
 			<key>Non-ASCII Anti Aliased</key>
@@ -1728,7 +1732,7 @@
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Title Components</key>
-			<integer>7</integer>
+			<integer>512</integer>
 			<key>Transparency</key>
 			<real>0.0</real>
 			<key>Unicode Normalization</key>
@@ -3477,18 +3481,18 @@
 	</array>
 	<key>NoSyncAllAppVersions</key>
 	<array>
-		<string>3.3.11</string>
-		<string>3.3.2</string>
-		<string>3.3.4</string>
+		<string>3.3.3</string>
 		<string>3.3.20190920-nightly</string>
 		<string>3.3.1</string>
-		<string>3.3.3</string>
-		<string>3.3.5beta3</string>
 		<string>3.3.12</string>
+		<string>3.3.11</string>
+		<string>3.3.5beta1</string>
+		<string>3.3.4</string>
+		<string>3.3.5beta3</string>
+		<string>3.3.2</string>
 		<string>3.3.9</string>
 		<string>3.2.9</string>
 		<string>3.3.0</string>
-		<string>3.3.5beta1</string>
 	</array>
 	<key>NoSyncBFPRecents</key>
 	<array>
@@ -3510,7 +3514,7 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1280, 800}}</string>
 		<key>topLeft</key>
-		<string>{170, 725}</string>
+		<string>{157, 777}</string>
 	</dict>
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
@@ -3519,7 +3523,7 @@
 	<key>NoSyncLastTipTime</key>
 	<real>590868640.24131894</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>64</integer>
+	<integer>65</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -4393,7 +4397,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-07-25T18:47:04Z</date>
+	<date>2020-08-04T18:47:41Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateGroupIdentifier</key>
