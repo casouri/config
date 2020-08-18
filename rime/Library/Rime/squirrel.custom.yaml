@@ -6,3 +6,8 @@ patch:
   style/corner_radius: 3
   # style/horizontal: true
   style/font_point: 17
+  # 改写自带的设置
+  app_options/org.gnu.Emacs:
+    ascii_mode: false
+  app_options/com.googlecode.iterm2:
+    ascii_mode: false

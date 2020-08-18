@@ -14,13 +14,16 @@ schema:
     朙月拼音＋搜狗雙拼方案。
 switches:
   - name: ascii_mode
-    reset: 0 # 默认中文
-    states: [ 中文, 西文 ]
-  - name: ascii_punct
-    states: [ ，。, ，． ]
+    reset: 0
+    states: ["中文", "西文"]
+  - name: full_shape
+    states: ["半角", "全角"]
+  - name: extended_charset
+    states: ["通用", "增廣"]
   - name: simplification
-    reset: 1
-    states: [ 漢字, 汉字 ]
+    states: ["漢字", "汉字"]
+  - name: ascii_punct
+    states: ["", ".,"]
 engine:
   processors:
     - ascii_composer
@@ -200,10 +203,12 @@ translator:
 
     
 punctuator:
-  half_shape:
+  half_shape: # Don’t ask why.
     "`": {commit: "`"}
-    "\"": {pair: ["“", "”"]}
-    "'": {pair: ["‘", "’"]}
+    # "\"": {pair: ["“", "”"]}
+    # "'": {pair: ["‘", "’"]}
+    "\"": {commit: "“”"}
+    "'": {commit: "‘’"}
     "!": {commit: "！"}
     "(": "（"
     ")": "）"
@@ -219,12 +224,13 @@ punctuator:
     "]": ["」", "】", "〕", "］"]
     "\\": {commit: "、"}
     "^": {commit: "……"}
-    # "-": "——"
+    "-": {commit: "–"} # en dash
+    "_": {commit: "——"}
     "{": ["『", "〖", "｛"]
     "}": ["』", "〗", "｝"]
-    "~": ["~", "～"]
-    "|": [commit: "｜"]
-
+    "~": {commit: "～"}
+    "|": {commit: "｜"}
+  
 key_binder:
   import_preset: default
 
