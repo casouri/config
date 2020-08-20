@@ -1,5 +1,0 @@
-patch:
-  # 載入擴充詞庫
-  translator/dictionary: luna_pinyin.extended
-
-
