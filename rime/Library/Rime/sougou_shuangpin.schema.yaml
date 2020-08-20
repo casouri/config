@@ -1,0 +1,238 @@
+# sougou_shuangpin.schema.yaml
+# Rime schema
+# encoding: utf-8
+# home page by 鶴: https://www.jianshu.com/p/b6a13061c74f
+schema:
+  schema_id: sougou_shuangpin
+  name: 搜狗双拼
+  version: "0.2"
+  author:
+    - double pinyin layout by 鶴
+    - Rime schema by 佛振 <chen.sst@gmail.com>
+    - Minor modification by 犬藻 <casouri@gmail.com>
+  description:
+    朙月拼音＋搜狗雙拼方案。
+switches:
+  - name: ascii_mode
+    reset: 0
+    states: ["中文", "西文"]
+  - name: full_shape
+    states: ["半角", "全角"]
+  - name: extended_charset
+    states: ["通用", "增廣"]
+  - name: simplification
+    states: ["漢字", "汉字"]
+  - name: ascii_punct
+    states: ["", ".,"]
+engine:
+  processors:
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+    # - fluid_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - script_translator
+  filters:
+    - simplifier
+    - uniquifier
+speller:
+  alphabet: 'zyxwvutsrqponmlkjihgfedcba;'
+  delimiter: " '"
+  algebra:
+    - erase/^xx$/
+    - derive/^([jqxy])u$/$1v/
+    - derive/^([aoe])([ioun])$/$1$1$2/
+    - derive/^([zcs])([^h])/$1h$2/
+    - xform/^([aoe].*)$/O$1/
+    - xform/^([aoe])(ng)?$/$1$1$2/
+    - xform/iu$/Q/
+    - xform/[iu]a$/$1W/
+    - xform/[iu]ang$/$1D/
+    - xform/uan$|er$/R/
+    - xform/[uv]e$/T/
+    - xform/uai|v$/Y/
+    - xform/^sh/U/
+    - xform/^ch/I/
+    - xform/^zh|ui$/V/
+    - xform/uo$/O/
+    - xform/un$/P/
+    - xform/i?ong$/S/
+    - xform/iao$/$1C/
+    - xform/(.)ao$/$1K/
+    - xform/(.)en$/$1F/
+    - xform/(.)eng$/$1G/
+    - xform/(.)ai$/$1L/
+    - xform/(.)ang$/$1H/
+    - xform/ian$/$1M/
+    - xform/(.)an$/$1J/
+    - xform/(.)ei$/$1Z/
+    - xform/ie$/X/
+    - xform/in$/N/
+    - xform/ui$/V/
+    - xform/(.)ou$/$1B/
+    - xform/ing$/$1;/
+    - xlit/QWERTYUIOPASDFGHJKLZXCVBNM/qwertyuiopasdfghjklzxcvbnm/
+    - abbrev/^(.).+$/$1/
+    # from terra
+    # - erase/^xx$/
+    # - xform/^r5$/er5/
+    # - abbrev/^([a-z]).+$/$1/
+    # - abbrev/^([zcs]h).+$/$1/
+    # - derive/^([nl])ve/$1ue/
+    # - derive/^([jqxy])u/$1v/
+    # - derive/un$/uen/
+    # - derive/ui/uei/
+    # - derive/iu/iou/
+    # - derive/ao/oa/
+    # - derive/([aeiou])ng/$1gn/
+    # - derive/([iu])a(o|ng?)/a$1$2/
+    # - derive/^([a-z]+)[0-5]$/$1/
+    # - derive/([dtngkhrzcs])o(u|ng)$/$1o/
+    # - derive/ong$/on/
+    # - 'erase/^.*5$/'
+    # - 'xlit 90-= 1234'
+
+translator:
+  dictionary: luna_pinyin
+  prism: sougou_shuangpin
+  enable_user_dict: true
+  preedit_format:
+    - xform/([bpmfdtnljqx])n/$1in/
+    - xform/(\w)g/$1eng/
+    - xform/(\w)q/$1iu/
+    - xform/(\w)w/$1ei/
+    - xform/([dtnlgkhjqxyvuirzcs])r/$1uan/
+    - xform/(\w)t/$1ve/
+    - xform/([nl])y/$1ü/
+    - xform/(\w)y/$1un/
+    - xform/([dtnlgkhvuirzcs])o/$1uo/
+    - xform/(\w)p/$1un/
+    - xform/([jqx])s/$1iong/
+    - xform/(\w)s/$1ong/
+    - xform/([ljnqx])d/$1iang/
+    - xform/([ckghsz])d/$1uang/
+    - xform/(\w)f/$1en/
+    - xform/(\w)h/$1ang/
+    - xform/(\w)j/$1an/
+    - xform/(\w)k/$1ao/
+    - xform/(\w)l/$1ai/
+    - xform/(\w)z/$1ei/
+    - xform/(\w)x/$1ie/
+    - xform/(\w)c/$1iao/
+    - xform/([dtgkhvuirzcs])v/$1ui/
+    - xform/(\w)b/$1ou/
+    - xform/(\w);/$1ing/
+    - xform/(\w)m/$1ian/
+    - xform/([aoe])\1(\w)/$1$2/
+    - "xform/(^|[ '])v/$1zh/"
+    - "xform/(^|[ '])i/$1ch/"
+    - "xform/(^|[ '])u/$1sh/"
+    # from terra
+    # - xform/([nl])v/$1ü/
+  #   - xform/([nl])ue/$1üe/
+  #   - xform/([jqxy])v/$1u/
+  #   - xform/eh/ê/
+  #   - 'xform ([aeiou])(ng?|r)([90-=]) $1$3$2'
+  #   - 'xform ([aeo])([iuo])([90-=]) $1$3$2'
+  #   - 'xform a9 ā'
+  #   - 'xform a0 á'
+  #   - 'xform a- ǎ'
+  #   - 'xform a= à'
+  #   - 'xform e9 ē'
+  #   - 'xform e0 é'
+  #   - 'xform e- ě'
+  #   - 'xform e= è'
+  #   - 'xform o9 ō'
+  #   - 'xform o0 ó'
+  #   - 'xform o- ǒ'
+  #   - 'xform o= ò'
+  #   - 'xform i9 ī'
+  #   - 'xform i0 í'
+  #   - 'xform i- ǐ'
+  #   - 'xform i= ì'
+  #   - 'xform u9 ū'
+  #   - 'xform u0 ú'
+  #   - 'xform u- ǔ'
+  #   - 'xform u= ù'
+  #   - 'xform ü9 ǖ'
+  #   - 'xform ü0 ǘ'
+  #   - 'xform ü- ǚ'
+  #   - 'xform ü= ǜ'
+  # comment_format:
+  #   - xform ([aeiou])(ng?|r)([1234]) $1$3$2
+  #   - xform ([aeo])([iuo])([1234]) $1$3$2
+  #   - xform a1 ā
+  #   - xform a2 á
+  #   - xform a3 ǎ
+  #   - xform a4 à
+  #   - xform e1 ē
+  #   - xform e2 é
+  #   - xform e3 ě
+  #   - xform e4 è
+  #   - xform o1 ō
+  #   - xform o2 ó
+  #   - xform o3 ǒ
+  #   - xform o4 ò
+  #   - xform i1 ī
+  #   - xform i2 í
+  #   - xform i3 ǐ
+  #   - xform i4 ì
+  #   - xform u1 ū
+  #   - xform u2 ú
+  #   - xform u3 ǔ
+  #   - xform u4 ù
+  #   - xform v1 ǖ
+  #   - xform v2 ǘ
+  #   - xform v3 ǚ
+  #   - xform v4 ǜ
+  #   - xform/([nljqxy])v/$1ü/
+  #   - xform/eh[0-5]?/ê/
+  #   - xform/([a-z]+)[0-5]/$1/
+
+    
+punctuator:
+  half_shape: # Don’t ask why.
+    "`": {commit: "`"}
+    # "\"": {pair: ["“", "”"]}
+    # "'": {pair: ["‘", "’"]}
+    "\"": {commit: "“”"}
+    "'": {commit: "‘’"}
+    "!": {commit: "！"}
+    "(": "（"
+    ")": "）"
+    "*": ["*", "＊", "・", "×",]
+    ",": {commit: "，"}
+    .: {commit: "。"}
+    ":": {commit: "："}
+    ";": {commit: "；"}
+    "<": ["《", "〈"]
+    ">": ["》", "〉"]
+    "?": {commit: "？"}
+    "[": ["「", "【", "〔", "［"]
+    "]": ["」", "】", "〕", "］"]
+    "\\": {commit: "、"}
+    "^": {commit: "……"}
+    "-": {commit: "–"} # en dash
+    "_": {commit: "——"}
+    "{": ["『", "〖", "｛"]
+    "}": ["』", "〗", "｝"]
+    "~": {commit: "～"}
+    "|": {commit: "｜"}
+  
+key_binder:
+  import_preset: default
+
+recognizer:
+  import_preset: default
