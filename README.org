@@ -50,18 +50,13 @@ macism         - switch input source
 | TeXLive   | TeX suite              |
 
 * Fonts
-Some in font directory. Rest:
-- Source Serif Pro
-- Source Sans Pro
-- Source Han Serif
-- Source Han Sans
-
-Download the super OTC release.
-
+In iCloud.
 * Dictionary
 [[http://jsomers.net/blog/dictionary][article]]
 [[https://github.com/ponychicken/WebsterParser][option 1]]
 [[https://github.com/aparks517/convert-websters][option 2]]
+
+In iCloud.
 
 * Common Lisp
 ** Quicklisp
