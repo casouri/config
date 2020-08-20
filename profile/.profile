@@ -62,5 +62,5 @@ alias texpkg="tlmgr"
 # alias ccl="/Applications/Clozure\ CL.app/Contents/MacOS/dx86cl64"
 alias ccl="/Users/yuan/attic/ccl-dev/dx86cl64"
 alias cdd="cd -"
-alias bilibili="you-get"
+alias bilibili="you-get -o ~/Movies/youtubed"
 alias pastebin='curl -F "c=@-" "https://fars.ee/"'
