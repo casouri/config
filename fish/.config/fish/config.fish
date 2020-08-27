@@ -18,3 +18,5 @@ end
 
 # z.lua
 source (lua ~/attic/z.lua/z.lua --init fish | psub)
+
+source ~/.alias

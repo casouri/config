@@ -47,20 +47,3 @@ export CPATH="$APPLE_SDK/usr/include"
 
 # info path
 export INFOPATH="~/emacs/info:/opt/local/share/info:/usr/local/share/info:/usr/share/info"
-
-# Alias
-
-alias ac="aria2c"
-alias ls="ls -G"
-alias ll="ls -lG"
-alias la="ls -alG"
-alias ..="cd .."
-# download whole site
-alias get-site="wget -r -np"
-# tex package manager
-alias texpkg="tlmgr"
-# alias ccl="/Applications/Clozure\ CL.app/Contents/MacOS/dx86cl64"
-alias ccl="/Users/yuan/attic/ccl-dev/dx86cl64"
-alias cdd="cd -"
-alias bilibili="you-get -o ~/Movies/youtubed"
-alias pastebin='curl -F "c=@-" "https://fars.ee/"'
