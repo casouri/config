@@ -4,7 +4,7 @@ function fish_prompt
     # iTerm displays path in the modeline, so we only display the base
     # name in the prompt. echo -n (prompt_pwd)
     echo -n (basename (prompt_pwd))
-    echo -n "/ "
+    echo -n " "
     if test $last_status = 0
         set_color green
         echo -n "吉"
