@@ -1,3 +1,5 @@
 gnupg/.gnupg/*
 !gnupg/.gnupg/gpg-agent.conf
 !gnupg/.gnupg/gpg.conf
+TeXmacs
+TeXmacs/*
