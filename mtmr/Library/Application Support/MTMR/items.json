@@ -1,0 +1,43 @@
+[
+  {
+    "type": "dock",
+    "align": "left",
+    // "filter": "(^Xcode$)|(Safari)|(.*player)",
+    "width": 580,
+    // "autoResize": true
+  },
+  // {
+  //   "type": "music",
+  //   "disableMarquee": true
+  // },
+  {
+    "type": "previous",
+    "align": "right",
+    "width": 60
+  },
+  {
+    "type": "play",
+    "align": "right",
+    "width": 60
+  },
+  {
+    "type": "next",
+      "align": "right",
+    "width": 60
+  },
+  {
+    "type": "volumeDown",
+    "align": "right",
+    "width": 60
+  },
+  {
+    "type": "volumeUp",
+    "align": "right",
+    "width": 60
+  },
+  {
+    "type": "mute",
+    "align": "right",
+    "width": 60
+  }
+]

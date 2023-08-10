@@ -1,18 +1,16 @@
 [user]
 	name = Yuan Fu
 	email = casouri@gmail.com
-        signingkey = 39F83D35E4849FBDDB2FCE2F56E19BC57664A442
-[filter "lfs"]
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
-	clean = git-lfs clean -- %f
+    signingkey = 39F83D35E4849FBDDB2FCE2F56E19BC57664A442
 [core]
 	excludesfile = ~/.gitignore-global
-
 [commit]
-        gpgsign = true
+    gpgsign = true
 [gpg]
 	program = gpg
 [credential]
 	helper = store
+[diff]
+	algorithm = histogram
+[init]
+	defaultBranch = master

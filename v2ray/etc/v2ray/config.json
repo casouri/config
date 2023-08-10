@@ -1,41 +1,32 @@
 {
   "log": {
-    "loglevel": "info",
-    "access": "/usr/local/var/log/v2ray.access.log",
-    "error": "/usr/local/var/log/v2ray.error.log"
+    "access": "/home/yuan/v2ray/access.log",
+    "error": "/home/yuan/v2ray/error.log"
   },
   "inbounds": [{
-    "port": 8088,  // SOCKS 代理端口，在浏览器中需配置代理并指向这个端口
-    "listen": "127.0.0.1",
-    "protocol": "socks",
-    "settings": {
-      "udp": true
-    }
-  }],
-  "outbounds": [{
+    "port": 12588,
     "protocol": "vmess",
     "settings": {
-      "vnext": [{
-        "address": "172.105.223.172", // 服务器地址，请修改为你自己的服务器 ip 或域名
-        "port": 12588,  // 服务器端口
-        "users": [{ "id": "1fe6bd2d-9358-46f7-aaf5-dc03ddca4ffa" }],
-        "alterid": 64
-      }]
-    }
-  }, {
-    "protocol": "freedom",
-    "tag": "direct",
-    "settings": {}
-  }],
-  "routing": {
-    "strategy": "rules",
-    "settings": {
-      "domainStrategy": "IPOnDemand",
-      "rules": [{
-        "type": "field",
-        "ip": ["geoip:private"],
-        "outboundTag": "direct"
-      }]
-    }
+      "clients": [{"id": "433e2d37-3582-48f3-9d9c-499622b56eee",
+                   "alterId": 64},
+                  {"id": "1fe6bd2d-9358-46f7-aaf5-dc03ddca4ffa",
+                   "alterId": 64},
+                  {"id": "22a7c782-4a11-4c38-8658-15abc348da90",
+                   "alterId": 64},
+                  {"id": "d7651fac-5ad3-46dc-abc1-5577292b3885",
+                   "alterId": 64},
+                  {"id": "709be29a-ee61-4746-826c-7c2b46a174b8",
+                   "alterId": 64},
+                  {"id": "1a75495f-4a98-4947-88e1-88d1c376c02b",
+                   "alterId": 64},
+                  {"id": "c6896e5a-7926-4f0f-b02e-60c99d814375",
+                   "alterId": 64},
+                  {"id": "4307362a-1a49-11eb-b538-4ff6422a0151",
+                   "alterId": 64}]}
   }
+              ],
+  "outbounds": [{
+    "protocol": "freedom",
+    "settings": {}
+  }]
 }
